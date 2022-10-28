@@ -1,0 +1,139 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<iframe src="https://albania360.al/gjirokasterkronika/#scene-0" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+    Your browser doesn't support iframes
+</iframe>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta property="og:image" content="https://storage.googleapis.com/albania360-exports/DSC05110 Panorama1-xikl9q2b.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="icon" sizes="256x256" href="../assets/img/icon-ok.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="../assets/img/icon-ok.png">
+    <meta name="description" content="Kronika e Gjirokastres">
+    <meta name="author" content="Albania360">
+    <meta name="copyright" content="© 2022 by Albania360">
+    <meta name="keywords"
+          content="virtual tour, albania, kala, kalaja, gjirokaster, gjirokastra, muzeu, muze, photosphere, 360 degree photos, 360 grade, ricoh theta, panorama, tur virtual">
+
+    <title>Kronika e Gjirokastres</title>
+
+
+</head>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="paramsJSON.js?q=15"></script>
+
+
+<script src="../assets/js/controls/OrbitControls.js"></script>
+<script src="../assets/js/controls/DeviceOrientationControls.js"></script>
+<script src="../assets/js/plugins/StereoEffect.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+<link rel="stylesheet" type="text/css"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css"
+      href="../assets/css/app.css?q=17">
+
+<script type="text/javascript">
+    var mousewheelDisabled = false;
+</script>
+
+
+
+<body>
+
+<div id="mainContainer" class="mainContainer">
+    <div class="transparentView">
+        <div class="navigationmenu">
+
+            <!--<span id="navmenu_left_btn" title="Previous" onclick="leftNavigate()"><i class="fa fa-caret-left"></i></span>-->
+            <select id="navigationsmenu_selector"  onchange="onSelectorChanged(this.value)" title="Navigation">
+
+            </select>
+
+            <!--<span id="navmenu_right_btn" title="Next" onclick="rightNavigate()"><i class="fa fa-caret-right"></i></span>-->
+
+        </div>
+
+    </div>
+
+
+    <div id="canvasContainer" class="canvasContainer" style="">
+
+        <div class="spinner">
+            <img src="../assets/img/spinner.gif" width="64px" height="64px">
+            <div style="color:white; font-size:small; font-family:sans-serif; text-decoration:none;text-shadow: 1px 1px 2px grey;">loading...</div>
+        </div>
+        <!--<div class="scroller" style="width:15%; position:absolute; right:0px;top:0px;height:100%; z-index:999"></div>-->
+        <!--<div class="bottomSpacer" style="width:70%;height:100px; position:absolute; left:0px;bottom:0px; z-index:999"></div>-->
+        <div id="buttonsContainer" class="buttonsContainer" style="z-index:2;">
+            <!--<span id="sensors_btn" title="Toggle Sensors" onclick="toggleSensors()"></span>-->
+            <!--<span id="vr_btn" title="Toggle Sensors" onclick="toggleVR()"></span>-->
+            <span id="fullscreen_btn" title="Toggle Fullscreen" onclick="goFullscreen()"><i
+                    class="fa fa-arrows-alt"></i></span>
+
+        </div>
+
+    </div>
+    <!--<a href="//albania360.al/" target="blank" id="footer" class="footer" style="">-->
+    <!--    Powered by Albania360.al-->
+    <!--</a>-->
+    <!--<div id="logo" style="position:absolute; right:20px; top:10px; z-index:999;">-->
+    <!--    <a href="//albania360.al/" target="_blank"> <img src="../img/logo.png" alt="Visit Albania360.al"-->
+    <!--                                                          title="Visit Albania360.al" style="width:15vh;-->
+    <!--    "> </a>-->
+    <!--</div>-->
+    
+        <div id="logo" style="position:absolute; right:20px; top:10px; z-index:999;">
+        <a href="//albania360.al/" target="_blank"> <img src="logo.png" alt="Kronika e Gjirokastres - Visit Albania360.al"
+                                                              title="Visit Albania360.al" style="width:15vh;
+        "> </a>
+    </div>
+    
+      
+        <div id="logo-plan" style="position:absolute; left:20px; top:0px; z-index:999;">
+        <a href="//albania360.al/" target="_blank"> <img src="logo-plan.png" alt="Kronika e Gjirokastres"
+                                                              title="Logo" style="width:10vh;
+        "> </a>
+    </div>
+    
+          
+
+
+
+</div>
+      <div id="logo-donator" style="position:absolute; left:10px; top:calc(100vh - 130px); z-index:999;">
+        <a href="//albania360.al/" target="_blank"> <img src="logo-donator.png" alt="Kronika e Gjirokastres"
+                                                              title="Logo" style="width:30vh;
+        "> </a>
+    </div>
+<div class="spacer"></div>
+
+
+<script src="../assets/js/main.js?q=17" type="text/javascript"></script>
+
+<script>
+    setTimeout(()=>{
+        $('#item-0-0').show();
+        $('#item-0-0').css("opacity","0.9")
+    },3000);
+</script>
+
+
+</body>
+</html>
